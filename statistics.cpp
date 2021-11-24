@@ -14,7 +14,7 @@ class IStatistics {
 
 class Min : public IStatistics {
  public:
-  Min() : m_min{std::numeric_limits<double>::min()} {}
+  Min() : m_min{std::numeric_limits<double>::max()} {}
 
   void update(double next) override {
     if (next < m_min) {
